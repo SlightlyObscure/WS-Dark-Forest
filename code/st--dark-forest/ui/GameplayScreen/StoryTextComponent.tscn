@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk0na5x846fsg"]
+
+[ext_resource type="Script" uid="uid://cjceo4nbg5kt7" path="res://scripts/ui/GameplayScreen/StoryTextComponent/storyTextComponent.gd" id="1_y8p57"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tgql6"]
+bg_color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="StoryTextComponent" type="PanelContainer"]
+offset_right = 75.0
+offset_bottom = 56.0
+size_flags_horizontal = 3
+script = ExtResource("1_y8p57")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Text" type="Label" parent="Margin/VBoxContainer"]
+layout_mode = 2
+text = "Text 123"
+autowrap_mode = 2
+
+[node name="Padding" type="Control" parent="Margin/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="Margin/VBoxContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgql6")
+text = "v"
+
+[connection signal="pressed" from="Margin/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]

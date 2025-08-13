@@ -1,0 +1,111 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpsywwj4ebvyu"]
+
+[ext_resource type="Script" uid="uid://meoese7xpvf" path="res://tempScripts/tempBackToTitle.gd" id="1_dxjjq"]
+[ext_resource type="Script" uid="uid://b2c7c8hgax2lp" path="res://scripts/ui/GameplayScreen/gameplayScreen.gd" id="1_tle8r"]
+[ext_resource type="Texture2D" uid="uid://dg04780jo3kak" path="res://assets/gameplayScenes/darkness.png" id="3_tle8r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dxjjq"]
+bg_color = Color(0.14902, 0.14902, 0.14902, 0.278431)
+
+[node name="GameplayScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tle8r")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(1160, 720)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="LeftCol" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Temp" type="Button" parent="HBoxContainer/LeftCol"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Title"
+script = ExtResource("1_dxjjq")
+
+[node name="MainArea" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="SceneAndText" type="HBoxContainer" parent="HBoxContainer/MainArea"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="SceneImageWrapper" type="Control" parent="HBoxContainer/MainArea/SceneAndText"]
+unique_name_in_owner = true
+clip_contents = true
+custom_minimum_size = Vector2(660, 660)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="SceneImage" type="TextureRect" parent="HBoxContainer/MainArea/SceneAndText/SceneImageWrapper"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(660, 660)
+layout_mode = 2
+offset_right = 660.0
+offset_bottom = 660.0
+size_flags_vertical = 4
+texture = ExtResource("3_tle8r")
+expand_mode = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/MainArea/SceneAndText"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dxjjq")
+
+[node name="Margin" type="MarginContainer" parent="HBoxContainer/MainArea/SceneAndText/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 0
+
+[node name="StoryScrollContainer" type="ScrollContainer" parent="HBoxContainer/MainArea/SceneAndText/PanelContainer/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="StoryElements" type="VBoxContainer" parent="HBoxContainer/MainArea/SceneAndText/PanelContainer/Margin/StoryScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BottomRow" type="HBoxContainer" parent="HBoxContainer/MainArea"]
+layout_mode = 2
+
+[node name="AreaPanel" type="PanelContainer" parent="HBoxContainer/MainArea/BottomRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Margin" type="MarginContainer" parent="HBoxContainer/MainArea/BottomRow/AreaPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="AreaText" type="Label" parent="HBoxContainer/MainArea/BottomRow/AreaPanel/Margin"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 2
+
+[node name="RightCol" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3

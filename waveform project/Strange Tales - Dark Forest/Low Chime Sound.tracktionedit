@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.3.13" projectID="4792c0/3ff2f43" creationTime="1750517463693"
+      lastSignificantChange="197934afcb1" modifiedBy="leonp">
+  <TRANSPORT endToEnd="1" position="0.62375" scrubInterval="0.06038889198106261"
+             start="0.0" loopPoint1="0.0" loopPoint2="1.0" looping="1"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.4065696597099304" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS/>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_e250cb5e" name="Input channel 1">
+      <INPUTDEVICEDESTINATION targetID="1012" targetIndex="0"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Search"
+             browserSelection="result/all" viewleft="0.2317064648699483" viewright="3.251151063923079"
+             scrollWhenPlaying="0" scrollSuspended="0" tracktop="0.0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <AUTOMAPXML/>
+  <ARRANGERTRACK name="Arranger" id="1027"/>
+  <CHORDTRACK name="Chord" id="1029"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1028">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1030">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" colour="ffff0000" height="156.9214596502167" mute="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="Track 1 Recording 1" start="0.0" length="1.0" offset="4.21875"
+               id="1034" source="4792c0/2ea7e0e" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ffff0000" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOut="0.7155176652569452" fadeOutType="1" fadeIn="0.0" pitchChange="1.0"
+               speed="1.0" gain="0.0" fadeInType="1">
+      <LOOPINFO rootNote="-1" numBeats="19.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+      <TAKES>
+        <TAKE source="4792c0/2ea7e0e"/>
+        <TAKE source="4792c0/108d87e"/>
+        <TAKE source="4792c0/1379eef"/>
+        <TAKE source="4792c0/2b698f8"/>
+        <TAKE source="4792c0/16ba863"/>
+        <TAKE source="4792c0/30f8c7a"/>
+        <TAKE source="4792c0/3588dcc"/>
+      </TAKES>
+    </AUDIOCLIP>
+    <PLUGIN type="distortion" windowLocked="1" id="1040" enabled="1" emphasis="0.5053480267524719"
+            mixLock="0.0" dtype="5" drive="0.09893050044775009" postGain="1.0"
+            tone="0.6817539930343628" mix="1.0" presetDirty="1" windowX="622"
+            windowY="462">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1004" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1006" colour="ffffaa00" height="156.9214596502167" mute="1">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1007" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1008" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1009" colour="ffaaff00" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1010" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1011" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ff00ff00" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1015" colour="ff00ffaa" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1016" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1017" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1018" colour="ff00aaff" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1019" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1020" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1021" colour="ff0000ff" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1022" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1023" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1024" colour="ffaa00ff" height="156.9214596502167">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1025" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1026" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>

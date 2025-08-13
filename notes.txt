@@ -1,0 +1,264 @@
+Skills
+	[Hands/Yellow]
+		[!] Marksmanship - Gunslinging, sharpshooting, killing efficiently.
+		[!] Reactions - The first to act is often the last to die.
+		Body Control - Precise motion allows you to move quietly, pick locks or pockets and otherwise use intricate tools.
+		
+	[Body/Red]
+		[!] Authority - Intimidation and reassurance through presence and physique.
+		[!] Force - The application of physical power.
+		Durability - Withstand the wear and tear of physical exertion and dangers to the flesh.
+		
+	[Knowledge/Blue-Grey]
+		[!] Crime - You've seen the dark side of humanity. Knowledge about criminal slang and operations.
+		Biology - Anatomy, zoology, botany. Understanding nature.
+		Occult - Religion, folklore and urban legends may in fact contain strange truths.
+
+	[Mind/Blue]
+		[!] Investigation - Noticing details, deducing motives, connecting clues. The daily work of a detective.
+		Deliberation - Careful consideration. Deep thought. The antedote to rashness. You have more time to make timed decisions.
+		Bel Esprit - Cleverness, wit. The most fasionable kind of intelligence. A treasured Jewel in the crown of the Elite.
+		
+	[Soul/Purple]
+		[!] Psychology - Reading people's emotions and anticipating responses. Marks dialog options with negative responses.
+		[!] Willpower - Resolve and strength of spirit. Make your mind a fortress against the coming storm.
+		Twighlight Sense - Hunches, gut feelings, strange intuition. It seems you sometimes know things you should not - could not possibly know.
+	
+	
+Base Skills
+	[!] Marksmanship - 2
+	[!] Reactions - 2
+	Body Control - 1
+		
+	[!] Authority - 2
+	[!] Force - 2
+	Durability - 1
+		
+	[!] Crime - 2
+	Biology
+	Occult
+		
+	[!] Investigation - 3
+	Deliberation - 1
+	Bel Esprit
+	
+	[!] Psychology - 2
+	Willpower - 2
+	Twighlight Sense
+
+20/105
+30
+
+-Background Options
+	[Investigative Journalist]
+		+2 Body Control
+		+2 Investigation
+		+2 Bel Esprit
+		+1 Reactions
+		+1 Occult
+		+1 Deliberation
+		+1 Psychology
+	
+	[Old Hound]
+		+2 Authority
+		+2 Investigation
+		+1 Marksmanship
+		+1 Durability
+		+1 Crime
+		+2 Psychology
+		+1 Twighlight Sense
+	
+	[Veteran]
+		+3 Marksmanship
+		+2 Reactions
+		+2 Authority
+		+2 Force
+		+2 Durability
+		+2 Willpower
+		+1 Biology
+		-1 Health
+		-1 Strain
+	
+	[Criminal Past]
+		+3 Body Control
+		+2 Marksmanship
+		+2 Crime
+		+1 Force
+		+1 Reactions
+		+1 Deliberation
+	
+	[Former Cop]
+		+2 Marksmanship
+		+1 Reactions
+		+3 Authority
+		+2 Durability
+		+2 Crime
+		+1 Investigation
+		+1 Psychology
+		+1 Willpower
+		+1 Twighlight Sense
+		-2 Health
+	
+	[Squandered Wealth]
+		+1 Body Control
+		+1 Authority
+		+2 Biology
+		+2 Occult
+		+4 Bel Esprit
+	
+	[Eccentric]
+		+1 Body Control
+		+2 Biology
+		+4 Occult
+		+2 Deliberation
+		+2 Willpower
+		+3 Twighlight Sense
+		-2 Strain
+	
+	[Working Man]
+		+1 Authority
+		+2 Force
+		+3 Durability
+		+1 Deliberation
+		+1 Psychology
+		+2 Willpower
+	
+
+
+
+https://www.freud.org.uk/event/the-deep-dark-forest/
+
+
+-Occasional Overlay Text
+	"And in the Depths of Your Heart shall You find Him"
+	"And in the Dark Forest shall You find Him"
+	"And You shall know Him by the Howling of Beasts"
+	"And You shall know Him by the Roiling of the Earth"
+	"And You shall know Him by the Stillness of the Damp, Hot Air"
+	"And by His ??? shall you know His Power"
+
+
+-Title Screen
+	-Pixel Font
+	-Rough Button Texture
+	-Background Image
+	-Fog slowly rolling in, as Player remains on Title Screen
+
+
+
+
+-Story Outline
+	-the year is 1956
+	-Jack Rush, P.I. (47, New York City) is down on his luck and accepts the dubious case of a missing daughter
+	-the Hester Family is worried for their daughter, Evelyn Hester (29), an anthropologist presumed missing on a research trip to Tenebrook, northern Pennsylvania
+	-she has not called them since she left over 3 weeks ago
+	-she went to Tenebrook to interview the local residents and investigate rumours of pagan/satanic religious practices and was planning on returning within 2 weeks
+	-a surge of disappearances in Pennsylvania has made the news recently
+	-for whatever reason the Hester Family does not trust the police to look for their daughter
+	-Evelyn had several encounter with the supernatural and was subsequently captured by the village cult to prevent her from drawing attention to them
+	-she is to be sacrificed to the Black Goat, to truly bring it into this world
+	-CULT STUFF
+	-Rush sets off on 4th September 1956 (Sunrise 6:30, Sunset 19:25)
+	-Rush is treated with suspicion, especially if he reveals his reason for being in town
+	-if the village cult discovers Rush's motivations, they are hesitant to act against him initially, as he seems like a though guy who can defend himself
+	-INVESTIGATION
+	-Lyla Shore (33) is investigating the disappearances, pretending to be an FBI agent
+	-she has a fake badge under the name Elizabeth Dale
+	-she arrives a day after Rush, but is only encountered the day after that, when she starts questioning the locals
+	-Shore can potentially reveal a lot of important information and deep lore, depending on how she is treated and whether the player succeeds in skill tests
+	INVESTIGATION
+	-Shore goes back to save Rush, as long as she wasn't treated poorly
+	-Rush has the option to leave 
+		-if he does, he potentially finds his car sabotaged and witnesses the effects of the ritual from afar
+		-evil beings chase him out of the forest
+	-otherwise he attepts to rescue Evelyn from the ritual
+	-Rush arrives too late
+	-the ritual has just reached its conclusion and Evelyn is sacrificed
+	-Rush has the option to shoot the cult leader or Evelyn, but this does not stop the ritual
+	-the Black Goat appears and makes Rush run away
+
+
+-Cult Characters
+	-Jacob Horne, Cult Leader, Preacher [no family]
+	-Raymond Mosley, Peacekeeper [1]
+	-Josephine Wood [2]
+	-Walter Reid, Hunter [3] 
+	-Harriet Crawley [7]
+
+
+-Side Characters
+	-the Postman
+	-Alexander Wells, Railway Magnate/Heir
+	-Tanner Gibbs, Old Lunatic, Doomseer (Terrible End)	[no family]
+	-Howard Phillips, mysterious Fisherboy [no family]
+	-Georgia Mosley, Hostess [1]
+	-Jebediah Wood, General Goods Store Owner [2]
+	-Alfred Reid [3], Theodore Lowe [4], Hunters
+	-Clara Howell, Herbalist, Maintainer of the shrine to the Roiling Earth [5]
+	-Ralph Hedgerson, Baker, Maintainer of the shrine to the Roiling Earth [6]
+	-Annabelle Howell, Tailor, Leatherworker [5]
+	-Edward Wood [2], Jacob Lowe [4], Jim Crawley [7], Harry Macconnell [8], Lumberjacks
+	-Rev. Martin Johnson, Reverend [no family]
+	-Frank Crawley, Blacksmith [7]
+	-Children?
+
+
+1 Mosley II
+2 Wood III
+3 Reid II
+4 Lowe II
+5 Howell II
+6 Hedgerson I
+7 Crawley III
+8 Macconnell I
+
+
+-Viewpoint Story
+	-Detective arrives at Post Office Hut for destination town and another nearby town
+		-Tutorial basically
+		-Detective asks about the Woman
+		-Clerk says he saw her drive towards the town, but not leave
+		-He also warns the Detective to be careful, as the people of the town are strange
+	-There is a wooden roadblock that stops the Detective from continuing in his car
+		-Tire tracks
+		-The Woman's car is nowhere to be found
+		-Bad Vibes
+	-Detective grabs his bag and continues on foot for a few more minutes before arriving in town a little before sunset
+	-In town there are only a few people to talk to
+		-there is a small hotel attached to the bar where the Detective can check in
+		-if he decides to head back and sleep in the car, a lunatic stops him and tells him he should not go out into the woods tonight
+		-the Detective can then decide to head to the car anyways or explore the woods at night
+		
+
+----------------------------------------------------------------------
+
+
+Ward
+Wallace
+Fisher
+Shaw
+Pierce
+Bradley
+Ryan
+Lowe
+Chambers
+Page
+Cross
+Manning
+Goodman
+Becker
+Moody
+Morrow
+Hartman
+Parrish
+Bullock
+Orr
+Hobbs
+Preston
+Hull
+Ester
+Church
+Carver
+Lott
+Finch
+Lay

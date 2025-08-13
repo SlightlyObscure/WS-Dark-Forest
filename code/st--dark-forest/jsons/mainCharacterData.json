@@ -1,0 +1,19 @@
+{
+	"skillPoints": 5,
+	"minStrain": 0,
+	"maxStrain": 5,
+	"skills": {
+		"A": {
+			"displayName": "*A*",
+			"description": "This is 'a' skill.",
+			"min": 0,
+			"max": 5
+		},
+		"B": {
+			"displayName": "*B*",
+			"description": "This skill might 'b' useful.",
+			"min": 1,
+			"max": 5
+		}
+	}
+}

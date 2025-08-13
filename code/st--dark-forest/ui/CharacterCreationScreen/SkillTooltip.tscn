@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://e3qqlqe7u8p7"]
+
+[node name="SkillTooltip" type="PanelContainer"]
+offset_right = 99.0
+offset_bottom = 60.0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="SkillName" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Ability"
+
+[node name="SkillDescription" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Description"

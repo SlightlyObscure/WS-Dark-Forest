@@ -1,0 +1,180 @@
+{
+	"preArea": {
+		"areaDisplayName": "The Pre Area",
+		"image": "darkness",
+		"text": "Welcome to the screen before the apple.",
+		"goTo": "continuing",
+		"ways": {
+			"continuing": {
+				"text": "Move on.",
+				"goTo": "continuing2"
+			},
+			"continuing2": {
+				"image": "distantApple",
+				"text": "There is something in the distance.",
+				"travelTo": "bigApple"
+			}
+		}
+	},
+	"bigApple": {
+		"areaDisplayName": "The Big Apple",
+		"image": "bigApple",
+		"text": "A gigantic shape comes into view. Its deep red dominates the dark sky. It is the biggest apple you have ever seen. Most likely the biggest apple anyone has seen.",
+		"flags": ["excuseSought", "imaginationAttempted", "wayOpened"],
+		"interactions": [
+			{
+				"obscuredBy": "excuseSought",
+				"text": "Find an excuse to not care",
+				"gainFlag": "excuseSought", 
+				"test": {
+					"ability": "A",
+					"difficulties": [4, 3, 1, 0],
+					"strain": false,
+					"pass": "testAbilityAPass",
+					"fail": "testAbilityAFail"
+				}
+			},
+			{
+				"obscuredBy": "imaginationAttempted",
+				"text": "Imagine the bee that is to blame for it",
+				"gainFlag": "imaginationAttempted", 
+				"test": {
+					"ability": "B",
+					"difficulties": [6, 5, 4, 2],
+					"strain": true,
+					"pass": "testAbilityBPass",
+					"fail": "testAbilityBFail"
+				}
+			},
+			{
+				"text": "Take a proportionally very small bite",
+				"goTo": "noms"
+			},
+			{
+				"text": "Walk around the apple",
+				"goTo": "circling"
+			},
+			{
+				"revealedBy": "wayOpened",
+				"text": "Just leave",
+				"travelTo": "marthasVinyard"
+			}
+		],
+		"ways": {
+			"circling": {
+				"text": "You take a stroll.",
+				"goTo": "circling2"
+			},
+			"circling2": {
+				"text": "It's quite a big apple. This takes you a while.",
+				"goTo": "circling3"
+			},
+			"circling3": {
+				"text": "You've done a full round, you think. Keep going?",
+				"interactions": [
+					{
+						"text": "Keep going!",
+						"goTo": "circling"
+					},
+					{
+						"text": "No thanks",
+						"gainFlag": "wayOpened",
+						"goTo": "-"
+					}
+				]
+			},
+			"testAbilityAPass": {
+				"text": "So what? You don't even like apples that much. They're like - whatever. And yeah its big, but that's about it. Neat, you guess. If someone's into that sort of thing. Time to move on.",
+				"gainFlag": "wayOpened",
+				"goTo": "-"
+			},
+			"testAbilityAFail": {
+				"text": "Is a man not entitled to his thoughts of the bigness of this apple? Why shouldn't you be allowed to care, really?",
+				"goTo": "testAbilityAFail2"
+			},
+			"testAbilityAFail2": {
+				"text": "You enjoy the incredible size of the apple for a while. But one can only marvel at such a thing for so long before questions of its origin begin to creep in. How can something like this possibly exist? From what tree does it stem? What sort of creature pollinated its flower? Is it in fact edible?",
+				"goTo": "-"
+			},
+			"testAbilityBPass": {
+				"image": "darkness",
+				"text": "Yes! Oh Magnificent Honey Giver! Oh Beating of Impossible Wings! Oh Chitin of Black and Yellow. Oh Lord of Flowers. Oh Great Polinator! Oh!",
+				"invocation": "imagineBeeFunc",
+				"goTo": "testAbilityBPass2"
+			},
+			"testAbilityBPass2": {
+				"text": "You are no longer before the great apple. In your fervor of imagination you have entered a hyper-real space of archetypal bee-ness",
+				"travelTo": "imaginaryBeeSpace"
+			},
+			"testAbilityBFail": {},
+			"noms": {
+				"text": "You take a small bite. It tastes like an apple! Do you like apples?",
+				"sound": "nom",
+				"interactions": [
+					{
+						"text": "Yes",
+						"goTo": "nomsYes"
+					},
+					{
+						"text": "No",
+						"goTo": "nomsNo"
+					}
+				]
+			},
+			"nomsYes": {
+				"text": "It's pretty good. Not amazing, but decent.",
+				"goTo": "noms2"
+			},
+			"nomsNo": {
+				"text": "Predictably, you're not impressed. Why did you do that?",
+				"goTo": "noms2"
+			},
+			"noms2": {
+				"text": "You take a step back - your bite clearly visible on the otherwise perfect skin of the apple. An eternal blemish. A primal sin.",
+				"goTo": "noms3"
+			},
+			"noms3": {
+				"text": "Regret grips your soul like a thousand cold, dead hands. Your vision begins to swim. You lose your balance. Darkness closes in around you. \nYou Lose!"
+			}
+		}
+	},
+	"imaginaryBeeSpace": {
+		"areaDisplayName": "Imaginary Bee Space",
+		"image": "darkness",
+		"text": "The bee is magnificent. You do not want to leave. You don't need to. \nYou Win!"
+	},
+	"marthasVinyard": {
+		"areaDisplayName": "Martha's Vinyard",
+		"image": "marthas",
+		"text": "It's nice here...",
+		"interactions": [
+			{
+				"text": "Go back to the apple",
+				"travelTo": "bigApple"
+			},
+			{
+				"text": "Accept a simple life",
+				"goTo": "acceptance"
+			}
+		],
+		"ways": {
+			"acceptance": {
+				"text": "It's nice here. Will you be happy?",
+				"test": {
+					"ability": "B",
+					"difficulties": [2, 1, 0, 0],
+					"strain": false,
+					"pass": "acceptancePass",
+					"fail": "testAbilityBFail"
+				}
+			},
+			"acceptancePass": {
+				"text": "You can imagine a life here, in the sun. Perhaps you will allow yourself to be happy. \nYou Win!"
+			},
+			"acceptanceFail": {
+				"text": "On second thought, maybe you'd rather have another look at the apple...",
+				"travelTo": "bigApple"
+			}
+		}
+	}
+}

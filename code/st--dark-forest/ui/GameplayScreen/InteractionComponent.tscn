@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://nnj1fxx41i32"]
+
+[ext_resource type="Script" uid="uid://cesfxn3baqqs0" path="res://scripts/ui/GameplayScreen/InteractionComponent/interactionComponent.gd" id="1_7v8o6"]
+
+[node name="InteractionComponent" type="Button"]
+offset_right = 120.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+text = "1. First Option"
+alignment = 0
+autowrap_mode = 2
+script = ExtResource("1_7v8o6")

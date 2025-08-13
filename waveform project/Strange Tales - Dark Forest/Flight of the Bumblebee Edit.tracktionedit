@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.3.13" projectID="4792c0/831357" creationTime="1750578705180"
+      lastSignificantChange="1979bfdb757" modifiedBy="leonp">
+  <TRANSPORT endToEnd="1" position="155.05" scrubInterval="0.2699769731871857"
+             start="147.75" looping="1" loopPoint1="0.0" loopPoint2="189.375"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="80.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7672412991523743" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS/>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_e250cb5e" name="Input channel 1">
+      <INPUTDEVICEDESTINATION targetID="1162" targetIndex="0"/>
+    </INPUTDEVICE>
+    <INPUTDEVICE deviceID="midiin_d4d10798" name="masterkey 61"/>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Search"
+             browserSelection="result/plugins" viewleft="141.590283657917"
+             viewright="155.0891323172763" tracktop="0.0" scrollWhenPlaying="0"
+             scrollSuspended="0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <MIDIVIEWSTATE scrollWhenPlaying="0" scrollSuspended="0"/>
+  <AUTOMAPXML/>
+  <ARRANGERTRACK name="Arranger" id="1027"/>
+  <CHORDTRACK name="Chord" id="1029"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1028">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1030">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" colour="ffff0000" height="95.5167252305402" verticalOffset="0.5629610982587563"
+         visibleProportion="0.2884425818920135">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="flight_of_the_bumblebee" start="0.0" length="189.375" offset="4.125"
+               id="1224" source="4792c0/26504c5" sync="1" elastiqueMode="0"
+               pan="0.0" colour="ffff0000" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeIn="0.6605864121964269" fadeOut="0.2486993611755128"
+               fadeOutType="2">
+      <LOOPINFO bpm="0.0" numBeats="275.0438424869459" denominator="4" numerator="4"
+                oneShot="0" rootNote="-1" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1" volume="0.736507773399353">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1162" colour="ff00ff00" height="89.32231651258866" mute="1">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1163" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1164" enabled="1"/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1166" colour="ff00ffaa" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1167" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1168" enabled="1"/>
+  </TRACK>
+  <TRACK id="1170" colour="ff00aaff" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1171" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1172" enabled="1"/>
+  </TRACK>
+  <TRACK id="1174" colour="ff0000ff" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1175" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1176" enabled="1"/>
+  </TRACK>
+  <TRACK id="1178" colour="ffaa00ff" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1179" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1180" enabled="1"/>
+  </TRACK>
+  <TRACK id="1182" colour="ffff00aa" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1183" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1184" enabled="1"/>
+  </TRACK>
+  <TRACK id="1186" colour="ffff0000" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1187" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1188" enabled="1"/>
+  </TRACK>
+  <TRACK id="1190" colour="ffffaa00" height="41.32231651258866">
+    <MODIFIERS/>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1191" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1192" enabled="1"/>
+  </TRACK>
+</EDIT>

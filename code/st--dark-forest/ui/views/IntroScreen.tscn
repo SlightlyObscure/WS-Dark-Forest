@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://x05j07ylgn64"]
+
+[ext_resource type="Script" uid="uid://dj11y6krxcriy" path="res://scripts/ui/IntroScreen/onNextButton.gd" id="1_fesmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fesmi"]
+
+[node name="IntroScreen" type="Node"]
+
+[node name="IntroText" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.5
+offset_top = -50.5
+offset_right = 186.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "There will be a short intro text here to introduce
+the Player Character, so that they know what
+they're getting into before distributing Skill
+Points"
+
+[node name="Next" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = 140.0
+offset_right = 50.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fesmi")
+text = "Next"
+script = ExtResource("1_fesmi")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh1gsf54kq8k0"]
+
+[ext_resource type="Script" uid="uid://h47xlk8isylc" path="res://scripts/ui/TitleScreen/titleButton.gd" id="1_hl2qr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jhfkg"]
+
+[node name="TitleButton" type="Control"]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 350.0
+offset_bottom = 50.0
+script = ExtResource("1_hl2qr")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -25.0
+offset_right = 175.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jhfkg")
+text = "buttonText"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

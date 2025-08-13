@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=3 uid="uid://dblwhwwu240lj"]
+
+[ext_resource type="PackedScene" uid="uid://dh1gsf54kq8k0" path="res://ui/TitleScreen/TitleButton.tscn" id="1_42u2d"]
+[ext_resource type="Script" uid="uid://dyllfh0gec2od" path="res://scripts/ui/TitleScreen/titleScreen.gd" id="1_s02da"]
+[ext_resource type="Script" uid="uid://b428blexifb8w" path="res://scripts/ui/TitleScreen/onNewGameButton.gd" id="2_s02da"]
+[ext_resource type="Script" uid="uid://unf6qsmeejrt" path="res://scripts/ui/TitleScreen/onContinueButton.gd" id="3_pjxxd"]
+[ext_resource type="Script" uid="uid://duyqhe66cr6hf" path="res://scripts/ui/TitleScreen/onSettingsButton.gd" id="3_yfawy"]
+[ext_resource type="Script" uid="uid://blf5m0vqmo0m" path="res://scripts/ui/TitleScreen/onExitButton.gd" id="4_pjxxd"]
+
+[node name="TitleScreen" type="Node"]
+script = ExtResource("1_s02da")
+
+[node name="Content" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.5
+offset_top = -335.0
+offset_right = 280.5
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Super Header" type="Label" parent="Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Weird Stories"
+horizontal_alignment = 1
+
+[node name="Header" type="Label" parent="Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 65
+text = "Tech Demo"
+horizontal_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -125.0
+offset_right = 175.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 25
+
+[node name="Continue" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+script = ExtResource("3_pjxxd")
+text = "Continue"
+
+[node name="New Game" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+script = ExtResource("2_s02da")
+text = "New Game"
+
+[node name="Settings" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+script = ExtResource("3_yfawy")
+text = "Settings"
+
+[node name="Content Warnings" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+text = "Content Warnings"
+disabled = true
+
+[node name="Credits" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+text = "Credits"
+disabled = true
+
+[node name="Exit" parent="Buttons" instance=ExtResource("1_42u2d")]
+layout_mode = 2
+script = ExtResource("4_pjxxd")
+text = "Exit"

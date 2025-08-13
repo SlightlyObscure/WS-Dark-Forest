@@ -1,0 +1,169 @@
+[gd_scene load_steps=10 format=3 uid="uid://bua42bsfly1qa"]
+
+[ext_resource type="Script" uid="uid://6hyqbmijh7sn" path="res://scripts/ui/CharacterCreationScreen/characterCreation.gd" id="1_eqimm"]
+[ext_resource type="Texture2D" uid="uid://djtq8cc3ag7rb" path="res://assets/images/temp_skill_clickable.png" id="2_3gtup"]
+[ext_resource type="Texture2D" uid="uid://dr17k0q2a5bd" path="res://assets/images/skill_A.png" id="3_t7bkj"]
+[ext_resource type="Script" uid="uid://m3jwhv22eisv" path="res://scripts/ui/CharacterCreationScreen/makeSkillTooltip.gd" id="4_lhbqv"]
+[ext_resource type="Texture2D" uid="uid://wydqmdagdprf" path="res://assets/images/skill_B.png" id="5_bh7q4"]
+[ext_resource type="Script" uid="uid://d3alpk1of4l21" path="res://scripts/ui/CharacterCreationScreen/onBeginButton.gd" id="6_mis1l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_agly0"]
+
+[sub_resource type="Theme" id="Theme_lg5fx"]
+PopupPanel/styles/panel = SubResource("StyleBoxEmpty_agly0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ativi"]
+
+[node name="CharacterCreationScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_lg5fx")
+script = ExtResource("1_eqimm")
+
+[node name="SkillPointsDisplay" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -260.0
+offset_right = 20.0
+offset_bottom = -220.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Label" parent="SkillPointsDisplay"]
+layout_mode = 2
+text = "Ability Points left: "
+
+[node name="Value" type="Label" parent="SkillPointsDisplay"]
+layout_mode = 2
+
+[node name="Skills" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkillA" type="VBoxContainer" parent="Skills"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -46.5
+offset_right = -67.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Skills/SkillA"]
+custom_minimum_size = Vector2(66, 66)
+layout_mode = 2
+
+[node name="IsClickableBorder" type="TextureRect" parent="Skills/SkillA/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("2_3gtup")
+
+[node name="Icon" type="TextureButton" parent="Skills/SkillA/CenterContainer"]
+layout_mode = 2
+button_mask = 3
+texture_normal = ExtResource("3_t7bkj")
+script = ExtResource("4_lhbqv")
+_skillName = "A"
+
+[node name="SkillLevel" type="Label" parent="Skills/SkillA"]
+layout_mode = 2
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="SkillB" type="VBoxContainer" parent="Skills"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 68.0
+offset_top = -45.5
+offset_right = 132.0
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Skills/SkillB"]
+custom_minimum_size = Vector2(66, 66)
+layout_mode = 2
+
+[node name="IsClickableBorder" type="TextureRect" parent="Skills/SkillB/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("2_3gtup")
+
+[node name="Icon" type="TextureButton" parent="Skills/SkillB/CenterContainer"]
+layout_mode = 2
+button_mask = 3
+texture_normal = ExtResource("5_bh7q4")
+script = ExtResource("4_lhbqv")
+_skillName = "B"
+
+[node name="SkillLevel" type="Label" parent="Skills/SkillB"]
+layout_mode = 2
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="SaveFileNameInput" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 140.0
+offset_right = 100.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Save Slot Name"
+max_length = 26
+expand_to_text_length = true
+
+[node name="Begin" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = 190.0
+offset_right = 50.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ativi")
+disabled = true
+text = "Begin"
+script = ExtResource("6_mis1l")
+
+[connection signal="gui_input" from="Skills/SkillA/CenterContainer/Icon" to="." method="_on_skill_a_icon_input"]
+[connection signal="gui_input" from="Skills/SkillB/CenterContainer/Icon" to="." method="_on_skill_b_icon_input"]
