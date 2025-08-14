@@ -124,6 +124,34 @@ Base Skills
 		+2 Willpower
 	
 
+Character Creation Screens
+-Intro I
+	September 26th, 1956. You are Jack Rush, a New York based private investigator, down on his luck.
+	Good work's been scarce and your drinking habits haven't exactly helped matters.
+-Intro II
+	This next job is a strange one. Not the kind of work you'd normally accept.
+	But that's for later.
+	First, tell me how we got here.
+-Background Selection
+	[Investigative Journalist]
+	[Old Hound]
+	[Veteran]
+	[Criminal Past]
+	[Former Cop]
+	[Squandered Wealth]
+	[Eccentric]
+	[Working Man]
+-Case Info I
+	The Hester family wants you to find their only daughter, who they presume to be missing.
+	29 year old Evelyn Hester left New York some three weeks ago and has not been in contact with her parents since.
+-Case Info II
+	An anthropologist, she'd come across rumours of unusual pagan practices, in a remote part of northern Pennsylvania.
+	Apparently, less reputable sources mention heathan rituals and satanism. Sources, which the Hester family takes very seriously.
+	She left for Tenebrook, Pennsylvania, on a field research trip that was only meant to take 2 weeks, according to her parents.
+-Case Info III
+	Certainly, the recent string of dissappearances in the area isn't helping the Hester family keep a cool head.
+	Why they've decided this is a matter for a P.I. and not the police is beyond you, but they're paying well, at least.
+-Skill Point Allocation
 
 
 https://www.freud.org.uk/event/the-deep-dark-forest/
