@@ -108,10 +108,10 @@ Base Skills
 	
 	[Eccentric]
 		+1 Body Control
-		+2 Biology
+		+3 Biology
 		+4 Occult
 		+2 Deliberation
-		+2 Willpower
+		+1 Willpower
 		+3 Twighlight Sense
 		-2 Strain
 	
@@ -132,16 +132,46 @@ Character Creation Screens
 -Intro II
 	This next job is a strange one. Not the kind of work you'd normally accept.
 	But that's for later.
-	First, tell me how we got here.
+	First, tell me how you got here.
 -Background Selection
-	[Investigative Journalist]
+	[Journalist]
+		You've never been able to stop yourself from digging where you weren't meant to. Journalism seemed like a natural fit. Uncovering high society scandals soon turned into revealing the true nature of the rich and powerful. Speaking truth to power ultimately didn't turn out well for you. The outlets won't print you, so you're forced to stick to smaller mysteries.
+		+Sly and sharp
+		+Well rounded
 	[Old Hound]
+		When you first started out as a P.I., it had a certain kind of charm to it. At times you felt like the protagonist of a mystery novel. Not anymore. But it's all you've ever know. What else are you supposed to do? At least this way, you're doing something you're actually good at.
+		+Seasoned investigator
+		+Unyielding
 	[Veteran]
+		Those who haven't seen combat will never know what you've been through. War has scarred you in body and soul, but it's also taught you to survive. You're a force to be reconned with. When your service ended, you needed something else to turn your mind to. The devil works through idle hands, or so they say.
+		+Combat Training
+		+Intimidating
+		+Tough body and strong will
+		-Old wounds and shell shock
 	[Criminal Past]
+		You were a dealer, a thief, a thug. Operating in the shadows always appealed to you. The power structure of organized crime - not so much. It took you a while to find your real calling - although you're not against the odd criminal endeavor here and there.
+		+Rogueish
+		+(?)Ready for violence
 	[Former Cop]
+		Your career as an officer of the law ended abruptly. You'd rather not think about the incident. You had this feeling going in - that something terrible was about to happen. But how were you supposed to know it was going to be something like that? You just had to quit after that. You've settled for a similar, but hopefully less exciting job.
+		+Authority
+		+Police Training
+		+Used to violence
+		-Major damage, that won't heal right
 	[Squandered Wealth]
+		The estate(?) was already struggling when you took over. Perhaps you should have focussed on a more practical education. You could have rebuilt your family's fortune. Instead you wandered from subject to subject, never giving any thought to future career prospects. You were always sharp though. Your current occupation is hardly prestigious and you've had to lower your standards significantly. But at least it's exciting!
+		+Learned
+		+Bright
 	[Eccentric]
+		You've always ben a bit odd. Unfortunately your interests for the occult and the mysteries of the universe alone aren't enough to pay the bills. You have this connection to the forces of nature, or...something. Something about this case seriously puts you on edge, but at the same time, you need to know what's going on.
+		+(?)Senses the supernatural
+		+Knowledgeable
+		+Measured actions
+		-Frail psyche
 	[Working Man]
+		You spent many years slaving away at the factory. It may work for some, but you didn't exactly find it fulfilling. Somehow you'd never considered doing something like detective work, but once the thought crossed your mind, you couldn't let it go. You'd rather not go back to the old life, but you're a practical man. Whatever happens - you'll figure something out, you're sure.
+		+Strong
+		+Durable
 -Case Info I
 	The Hester family wants you to find their only daughter, who they presume to be missing.
 	29 year old Evelyn Hester left New York some three weeks ago and has not been in contact with her parents since.
@@ -153,7 +183,7 @@ Character Creation Screens
 *coat & door sound*
 -Case Info III
 	Certainly, the recent string of dissappearances in the area isn't helping the Hesters keep a cool head.
-	Why they've decided this is a matter for a P.I. and not the police is beyond you, but they're paying well, at least.
+	Why they've decided this is a matter for a P.I. and not the police is beyond you. But they're paying well, at least.
 -Skill Point Allocation
 *engine sound*
 
@@ -255,11 +285,30 @@ https://www.freud.org.uk/event/the-deep-dark-forest/
 		-The Woman's car is nowhere to be found
 		-Bad Vibes
 	-Detective grabs his bag and continues on foot for a few more minutes before arriving in town a little before sunset
-	-In town there are only a few people to talk to
+	-In town there are only a few people to talk to at this moment
+		-Theodore Lowe is leaning on a pile of wood
+		-Tanner Gibbs is sitting on a porch, babbling nonsense
+	-Night nears
 		-there is a small hotel attached to the bar where the Detective can check in
 		-if he decides to head back and sleep in the car, a lunatic stops him and tells him he should not go out into the woods tonight
 		-the Detective can then decide to head to the car anyways or explore the woods at night
-		
+
+-Scenes for Trailer
+	[You didn't want to take this case]
+	-Post Office Hut
+	-Talking to Theodore Lowe on the first evening
+	-Getting approached by Tanner Gibbs, if you try to leave
+	-3 Men huddled in the bar
+	[Something's off about the locals]
+	<some investigating>
+	[They're hiding something]
+	<some more weird stuff>
+	{And You shall know Him by the Howling of Beasts}
+	-Scary noises and movement, when you decide to sleep in the car
+	-Wandering in the Woods
+	-Finding the Roiling Earth altar
+	-Beasts in the woods
+	{And in the Dark Forest shall You find Him}
 
 ----------------------------------------------------------------------
 
