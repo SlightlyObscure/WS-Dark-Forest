@@ -50,6 +50,8 @@ project/assembly_name="ST- Dark Forest"
 
 timers/tooltip_delay_sec=0.1
 timers/tooltip_delay_sec.editor_hint=0.1
+fonts/dynamic_fonts/use_oversampling=false
+theme/custom_font="uid://1jcrvuej43gt"
 
 [input]
 

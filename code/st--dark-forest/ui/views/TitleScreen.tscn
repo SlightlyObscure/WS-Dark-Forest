@@ -79,3 +79,11 @@ disabled = true
 layout_mode = 2
 script = ExtResource("4_pjxxd")
 text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 269.0
+offset_top = 286.0
+offset_right = 360.0
+offset_bottom = 309.0
+theme_override_font_sizes/font_size = 16
+text = "Hello World"
